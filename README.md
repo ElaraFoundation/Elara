@@ -86,7 +86,7 @@ bioproof/
 - Node.js (v14+)
 - npm or yarn
 - PostgreSQL
-- Ethereum node access (via Infura, Alchemy, or local node)
+- Solana node access (via Alchemy, or local node)
 - IPFS node access (via Infura, Pinata, or local node)
 
 ### Installation
@@ -128,28 +128,22 @@ bioproof/
    # JWT
    JWT_SECRET=your-secret-key
 
-   # Ethereum
-   ETH_PROVIDER_URL=https://goerli.infura.io/v3/your-infura-id
-   PRIVATE_KEY=your-ethereum-private-key
-   CONTRACT_ADDRESS=your-deployed-contract-address
-
    # IPFS
    IPFS_HOST=ipfs.infura.io
    IPFS_PORT=5001
    IPFS_PROTOCOL=https
-   IPFS_PROJECT_ID=your-infura-ipfs-project-id
-   IPFS_PROJECT_SECRET=your-infura-ipfs-project-secret
+   IPFS_PROJECT_ID=your-solana-ipfs-project-id
+   IPFS_PROJECT_SECRET=your-solana-ipfs-project-secret
 
    # Credentials
    ISSUER_PRIVATE_KEY=your-issuer-private-key
-   ISSUER_DID=did:ethr:0x1234...
    ```
 
 4. Create a `.env` file in the frontend directory:
    ```
    REACT_APP_API_URL=http://localhost:3000/api
    REACT_APP_CONTRACT_ADDRESS=your-deployed-contract-address
-   REACT_APP_DEFAULT_NETWORK=goerli
+   REACT_APP_DEFAULT_NETWORK=mainnet
    REACT_APP_IPFS_GATEWAY=https://ipfs.io/ipfs/
    ```
 
@@ -163,10 +157,6 @@ bioproof/
    ```
 
 2. Deploy the smart contract:
-   ```
-   cd contracts
-   npx hardhat run scripts/deploy.js --network goerli
-   ```
    Update the CONTRACT_ADDRESS in both .env files with the deployed address.
 
 ### Running the Application
@@ -200,7 +190,7 @@ For detailed information on contract functions and events, see the [Smart Contra
 
 The backend provides a RESTful API for interacting with the blockchain and IPFS:
 
-- **Auth**: Login with Ethereum signature, JWT issuance
+- **Auth**: Login with Solana signature, JWT issuance
 - **Studies**: CRUD operations for research studies
 - **Consents**: Request, grant, revoke, and query consent status
 - **IPFS**: Upload and retrieve data from IPFS
