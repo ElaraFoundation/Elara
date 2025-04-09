@@ -47,13 +47,13 @@ BioProof addresses the critical need for transparent, secure, and user-controlle
 
 ## Technology Stack
 
-- **Blockchain**: Ethereum (with support for other EVM-compatible chains)
+- **Blockchain**: Solana
 - **Smart Contracts**: Solidity
 - **Backend**: Node.js, Express
-- **Frontend**: React, Ethers.js
+- **Frontend**: React
 - **Database**: PostgreSQL (for indexing and caching)
 - **Decentralized Storage**: IPFS
-- **Authentication**: JWT, Ethereum signatures
+- **Authentication**: JWT, Solana Signature
 - **Verifiable Credentials**: JSON-LD, JWT
 
 ## Project Structure
@@ -86,7 +86,6 @@ bioproof/
 - Node.js (v14+)
 - npm or yarn
 - PostgreSQL
-- MetaMask or other Ethereum wallet
 - Ethereum node access (via Infura, Alchemy, or local node)
 - IPFS node access (via Infura, Pinata, or local node)
 
