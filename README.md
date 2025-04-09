@@ -1,5 +1,9 @@
 # BioProof: Decentralized Biometric Consent Verification
 
+<p align="center">
+  <img src="img/banner.png" alt="BioProof Banner" width="100%" />
+</p>
+
 BioProof is a blockchain-based platform for managing informed consent for biometric data in research studies. It creates immutable records of informed consent, ensuring ethical compliance and giving participants ownership of their data-sharing decisions.
 
 ## Table of Contents
