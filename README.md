@@ -6,7 +6,7 @@
 
 BioProof is a blockchain-based platform for managing informed consent for biometric data in research studies. It creates immutable records of informed consent, ensuring ethical compliance and giving participants ownership of their data-sharing decisions.
 
-Contract Address: 3He48o3w4EHDJt2z2ax9GVa61Dk7CnL2H6W73k5Fpump
+Contract Address: 
 
 ## Table of Contents
 
